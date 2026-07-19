@@ -3,7 +3,7 @@
   connection: local
   vars: 
     ami_id: ami-0220d79f3f480ecf5
-    sd_id: sg-0ff14d50fb27e048b
+    sg_id: sg-0ff14d50fb27e048b
     zone_id: "Z05714843SO1YQWMF1N5N" 
     domain_name: "pramod.shop"
     instances:
