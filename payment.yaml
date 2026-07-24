@@ -50,7 +50,7 @@
   - name: install dependencies
     ansible.builtin.pip:
       requirements: /app/requirements.txt
-      executable: 3.9
+      executable: pip3
     args:
       chdir: /app
 
