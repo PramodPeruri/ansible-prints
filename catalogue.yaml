@@ -71,7 +71,7 @@
 
   - name: connect to mongodb catalogue
     ansible.builtin.command: mongosh mongodb.pramod.shop --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
-    regsiter: catalogue_output
+    register: catalogue_output
 
   - name: load products into mongodb
     ansible.builtin.shell: mongosh --host mongodb.pramod.shop </app/catalogue/db/master-data.js
