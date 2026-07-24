@@ -46,13 +46,13 @@
   - name: extract catalogue application
     ansible.builtin.unarchive:
       src: /tmp/catalogue-3dprints.zip
-      dest: /tmp/catalogue-3dprints
+      dest: /app
       remote_src: yes
 
   
   - name: install dependencies
     community.general.npm:
-      path: /app
+      path: /app/catalogue
 
   - name: copy catalogue service
     ansible.builtin.copy:
