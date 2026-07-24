@@ -43,7 +43,7 @@
   - name: extract payment application
     ansible.builtin.unarchive:
       src: /tmp/payment.zip
-      dest: /app/payment
+      dest: /app
       remote_src: yes
 
   - name: install dependencies
