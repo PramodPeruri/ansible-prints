@@ -70,7 +70,7 @@
       state: present
 
   - name: connect to mongodb catalogue
-    ansible,builtin.command: mongosh mongodb.pramod.shop --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
+    ansible.builtin.command: mongosh mongodb.pramod.shop --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
     regsiter: catalogue_output
 
   - name: load products into mongodb
