@@ -46,13 +46,13 @@
   - name: extract user application
     ansible.builtin.unarchive:
       src: /tmp/user.zip
-      dest: /app/user
+      dest: /app
       remote_src: yes
 
   
   - name: install dependencies
     community.general.npm:
-      path: /app
+      path: /app/user
 
   - name: copy user service
     ansible.builtin.copy:
