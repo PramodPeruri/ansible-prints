@@ -25,6 +25,6 @@
       permissions:
         - vhost: /
           configure_priv: .*
-          read_prov: .*
-          write_prov: .*
+          read_priv: .*
+          write_priv: .*
       state: present
