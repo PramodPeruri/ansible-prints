@@ -50,7 +50,7 @@
   - name: extract shipping application
     ansible.builtin.unarchive:
       src: /tmp/shipping.zip
-      dest: /app/shipping
+      dest: /app
       remote_src: yes
 
   - name: install dependencies
